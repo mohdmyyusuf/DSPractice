@@ -1,5 +1,6 @@
 package trickyquestions;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class TQTwo_printnumwithoutloops {
@@ -20,6 +21,17 @@ public class TQTwo_printnumwithoutloops {
 		}
 	}
 	
+	public void printNum2() {
+		Object num[] = new Object[100];
+		Arrays.fill(num, new Object() {
+			int count = 0;
+			@Override
+			public String toString() {
+				return Integer.toString(++count);
+			}
+		});
+		System.out.println(Arrays.toString(num));
+	}
 	
 	
 	
@@ -27,7 +39,8 @@ public class TQTwo_printnumwithoutloops {
 	public static void main(String[] args) {
 		
 		TQTwo_printnumwithoutloops obj = new TQTwo_printnumwithoutloops();
-		obj.printNum1(1, 100);
+		//obj.printNum1(1, 100);
+		obj.printNum2();
 	
 	}
 	

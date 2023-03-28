@@ -2,9 +2,9 @@ package codilitytests;
 
 public class CyclicRotation {
 	
-	/*first of all check the length of array:
+	/* first of all check the length of array:
 	// * if it is 0, return array 
-	 * or if it is equal to number of rotations, return array
+	// * or if it is equal to number of rotations, return array
 	 * then run a loop for number of rotations and under that loop another loop to iterate the
 	 * array from second last element... 
 	 */
